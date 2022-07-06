@@ -1,0 +1,30 @@
+.modal-size {
+    position: absolute;
+    min-width: 40%;
+    min-height: 50%;
+    background-color: white;
+    top: 50%;
+    left: 50%;
+    right: auto;
+    bottom: auto;
+    border-radius: 6px;
+    transform: translate(-50%, -50%);
+    outline: none;
+  }
+
+  .button-style{
+      max-width: 92%;
+      position:relative;
+      // top: 80%;
+      // left: 52%;
+      margin-left: 52%;
+  }
+  .title-style{
+    top:5px;
+    position: relative;
+    text-align: center;
+    font-size: 22px;
+    letter-spacing: 2px;
+  }
+  
+
