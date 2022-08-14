@@ -37,6 +37,7 @@ nav{
 
 .nav-links :hover div{
     color: rgb(202, 74, 57);
+    cursor: pointer;
 }
 
 .burger{

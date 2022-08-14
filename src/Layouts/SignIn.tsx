@@ -34,7 +34,7 @@ const SignIn = (props:any) => {
     }
   }
   return (
-    <div>
+    <div style={{"marginTop":"8%"}}>
       <LabelInput name="Email Id" mandatory={true} onChange={handleEmail}/>
       { wrongEmail &&
         <span style={{fontSize:"8px",marginLeft:"5vh", color:"red"}}>Invalid Email Id</span>

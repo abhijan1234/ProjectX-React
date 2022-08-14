@@ -26,6 +26,11 @@ const Navbar = (props:any) => {
         setRegisterPopUp(false)
         setSignInAllow(false)
     }
+
+    const signInHandle=()=>{
+        console.log("Sign in clicked")
+        props.history.push("/1/homeLand")
+    }
   return (
       <>
         <nav className='navbar'> 
@@ -48,7 +53,7 @@ const Navbar = (props:any) => {
         {signInPopUp && (<Popup 
                         title={"Sign In"}
                         opened={signInPopUp} 
-                        primaryButtonHandle={signInHandleClick} 
+                        primaryButtonHandle={signInHandle} 
                         primaryButton={"Log In"} 
                         secondaryButton={"Cancel"}
                         closeHandle={closeModal}
