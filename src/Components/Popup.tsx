@@ -9,8 +9,7 @@ const Popup = (props: any) => {
   return (
     <Modal
       open={props.opened}
-      onClose={props.closeHandle}
-      
+      onClose={props.closeHandle}  
     >
       <div className='modal-size'>
         <div className='title-style'>
@@ -22,7 +21,7 @@ const Popup = (props: any) => {
             disabled={!props.primaryButtomDisabled}
             style={{
               backgroundColor: "rgb(250, 202, 69)",
-              fontSize: "8px"
+              fontSize: "8px",
             }} variant='contained'
             size="small"
             onClick={handleClick}

@@ -1,22 +1,15 @@
-import "./HomePage.css"
-import image from "../Static/open.jpg"
+import "./HomePage.scss"
+import image from "../Static/open1.jpg"
 import slider1 from "../Static/slider1.jpg"
 import slider2 from "../Static/slider2.jpg"
 import Slider from "./Slider"
-import Navbar from "../Components/Navbar"
+import NavbarControl from "./NavbarControl"
 import { useHistory } from "react-router-dom"
 const HomePage = () => {
   let history=useHistory()
-  const navbarItems=[
-    {title:"About"},
-    {title:"Contact Us"},
-    {title:"Log In"},
-    {title:"Sign Up"},
-
-  ]
   return (
     <div>
-        <Navbar navbarItems={navbarItems} history={history}/>
+        <NavbarControl history={history}/>
         <div className="home-container">
           <img className="logo" src={image} alt="" />
           <h1 className="title">Learn and Do</h1>

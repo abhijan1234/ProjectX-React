@@ -5,9 +5,9 @@ import RoutePage from './Components/RoutePage';
 
 function App() {
   return (
-    <div className="App">
+    <>
       <RoutePage />
-    </div>
+    </>
   );
 }
 

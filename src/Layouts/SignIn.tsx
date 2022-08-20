@@ -35,11 +35,13 @@ const SignIn = (props:any) => {
   }
   return (
     <div style={{"marginTop":"8%"}}>
-      <LabelInput name="Email Id" mandatory={true} onChange={handleEmail}/>
-      { wrongEmail &&
-        <span style={{fontSize:"8px",marginLeft:"5vh", color:"red"}}>Invalid Email Id</span>
+      <LabelInput type="email" name="Email Id" mandatory={true} onChange={handleEmail}/>
+      { wrongEmail ?(
+        <span style={{fontSize:"8px",marginLeft:"8%", color:"red"}}>Invalid Email Id</span>
+      ):<span style={{fontSize:"8px",marginLeft:"8%"}}></span>
+
       }
-      <LabelInput name ="Password" mandatory={true} onChange={handlePassword}/>
+      <LabelInput type="password" name ="Password" mandatory={true} onChange={handlePassword}/>
       <span style={{fontSize:"8px",marginLeft:"5vh", color:"blue",cursor:"pointer"}}>Forgot Password?</span>
     </div>
   )

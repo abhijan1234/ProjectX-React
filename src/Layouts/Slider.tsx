@@ -1,5 +1,5 @@
 import React from 'react'
-import "./Slider.css"
+import "./Slider.scss"
 import {useInView} from "react-intersection-observer"
 
 const Slider = (props:any) => {

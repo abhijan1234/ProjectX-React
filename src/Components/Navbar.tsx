@@ -1,80 +1,26 @@
-import React, { useState } from 'react'
-import {FiMenu,FiX} from "react-icons/fi"
-import SignIn from '../Layouts/SignIn'
-import "./Navbar.css"
-import Popup from './Popup'
+import React, { useEffect } from 'react'
+import {AiFillBell,AiFillSetting} from "react-icons/ai"
+import "./Navbar.scss"
+import me from "../Static/me.jpeg"
 
 const Navbar = (props:any) => {
-    const [signInPopUp,setSignInPopUp]=useState(false)
-    const [registerPopUp,setRegisterPopUp]=useState(false)
-    const [signInAllow,setSignInAllow]=useState(false)
-
-    const signInDataFound=()=>{
-        console.log("Found data")
-        setSignInAllow(true)
-    }
-
-    const signInHandleClick=()=>{
-        setSignInPopUp(true) 
-    }
-
-    const registerHandleClick=()=>{
-        setRegisterPopUp(true)
-    }
-    const closeModal=()=>{
-        setSignInPopUp(false)
-        setRegisterPopUp(false)
-        setSignInAllow(false)
-    }
-
-    const signInHandle=()=>{
-        console.log("Sign in clicked")
-        props.history.push("/1/homeLand")
-    }
   return (
-      <>
-        <nav className='navbar'> 
-            <h1 className='project-name'>Project X</h1>
-            <ul className='navbar_list'>
-                <li className='navbar_item'>
-                    <div className='navbar_link'>About</div>
+    <>
+        <nav className='homeNavbar'>
+            <h1 className='home-project-name'>Project X</h1>
+            <ul className='home-navbar_list'>
+                <li className='home-navbar_item'>
+                    <AiFillBell className='home-navbar_link'/>
                 </li>
-                <li className='navbar_item'>
-                    <div className='navbar_link'>Contact Us</div>
+                <li className='home-navbar_item'>
+                    <AiFillSetting className='home-navbar_link'/>
                 </li>
-                <li className='navbar_item'>
-                    <div className='navbar_link' onClick={signInHandleClick}>Sign In</div>
-                </li>
-                <li className='navbar_item'>
-                    <div className='navbar_link' onClick={registerHandleClick}>Register</div>
+                <li style={{paddingLeft:"5px"}}>
+                    <img className='home-profileImage' src={me} alt="" />
                 </li>
             </ul>
         </nav>
-        {signInPopUp && (<Popup 
-                        title={"Sign In"}
-                        opened={signInPopUp} 
-                        primaryButtonHandle={signInHandle} 
-                        primaryButton={"Log In"} 
-                        secondaryButton={"Cancel"}
-                        closeHandle={closeModal}
-                        secondaryButtonHandle={closeModal}
-                        primaryButtomDisabled={signInAllow}>
-                <SignIn signInDataFound={signInDataFound}/>
-            </Popup>)
-        }
-        {registerPopUp && (<Popup 
-                        title={"Register"}
-                        opened={registerPopUp} 
-                        primaryButtonHandle={registerHandleClick} 
-                        primaryButton={"Register"} 
-                        secondaryButton={"Cancel"}
-                        closeHandle={closeModal}
-                        secondaryButtonHandle={closeModal}
-                        primaryButtomDisabled={signInAllow}>
-                {/* <SignIn signInDataFound={signInDataFound}/> */}
-            </Popup>)}
-      </>
-    
+    </>
   )
 }
 
