@@ -1,0 +1,41 @@
+.modal-size {
+    position: absolute;
+    min-width: 40%;
+    min-height: 55%;
+    max-height: 55%;
+    background-color: white;
+    top: 50%;
+    left: 50%;
+    right: auto;
+    bottom: auto;
+    border-radius: 6px;
+    transform: translate(-50%, -50%);
+    outline: none;
+  }
+
+  .button-style{
+      max-width: 92%;
+      position:absolute;
+      display: flex;
+      text-align: center;
+      // top: 80%;
+      // left: 52%;
+      margin-left: 57%;
+      margin-top: 8%;
+      // margin-bottom: -1%;
+  }
+
+  .button-style :hover{
+    cursor: pointer;
+  }
+
+  .title-style{
+    top:6px;
+    position: relative;
+    text-align: center;
+    font-size: 22px;
+    letter-spacing: 2px;
+    padding-bottom: 2%;
+  }
+  
+

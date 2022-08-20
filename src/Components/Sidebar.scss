@@ -1,0 +1,32 @@
+.mainContainer{
+    position: fixed;
+    background:rgb(157, 158, 160);
+    margin-top: 7%;
+    width: 17%;
+    height: 100%;
+}
+
+.mainListItems{
+    display: flex;
+    padding: 3vh 3vh 3vh 3vh;
+    text-decoration: none;
+    transition: 550ms;
+    color: black;
+}
+
+.mainSideList
+{
+    margin-top: 25%;
+}
+.mainSideList :hover
+{
+    cursor: pointer;
+    background-color: rgb(251, 251, 251);
+    border-radius: 3px;
+    transform: scale(1.1);
+}
+.sideItems{
+    margin-left: 7%;
+    font-size:small;
+}
+
