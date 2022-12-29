@@ -7,7 +7,46 @@ const Sidebar = (props:any) => {
   return (
     <div className='mainContainer'>
       <ul className='mainSideList'>
-          <Link to={"/1/homeLand"} className='mainListItems'>
+          <div className='eachListContainer'>
+              <div className='eachListItem'>
+                  <Link to={"/1/homeLand"} className='itemName'>
+                      Home
+                  </Link>
+              </div>
+          </div>
+
+          <div className='eachListContainer'>
+              <div className='eachListItem'>
+                  <Link to={"/1/contacts"} className='itemName'>
+                    Contacts
+                  </Link>
+              </div>
+          </div>
+
+          <div className='eachListContainer'>
+              <div className='eachListItem'>
+                  <Link to={"/1/projects"} className='itemName'>
+                    My Projects
+                  </Link>
+              </div>
+          </div>
+
+          <div className='eachListContainer'>
+              <div className='eachListItem'>
+                  <Link to={"/1/reports"} className='itemName'>
+                    Reports
+                  </Link>
+              </div>
+          </div>
+
+          <div className='eachListContainer'>
+              <div className='eachListItem'>
+                  <Link to={""} className='itemName'>
+                      Test
+                  </Link>
+              </div>
+          </div>
+          {/* <Link to={"/1/homeLand"} className='mainListItems'>
               <AiFillHome />
               <div className='sideItems'>
                   Home
@@ -36,7 +75,7 @@ const Sidebar = (props:any) => {
               <div className='sideItems'>
                   Test
               </div>
-          </Link>
+          </Link> */}
       </ul>
     </div>
   )

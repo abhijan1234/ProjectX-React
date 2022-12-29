@@ -1,6 +1,6 @@
-import React from 'react'
 import Navbar from '../../Components/Navbar'
 import Sidebar from '../../Components/Sidebar'
+import NewProject from './NewProject'
 import "./Projects.scss"
 const Projects = (props:any) => {
   return (
@@ -9,6 +9,7 @@ const Projects = (props:any) => {
       <Sidebar />
       <div className='projectPageContainer'>
           Project Page
+          <NewProject />
       </div>      
     </div>
   )
