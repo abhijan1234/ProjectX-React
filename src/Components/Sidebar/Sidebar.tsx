@@ -1,6 +1,5 @@
 import React from 'react'
 import "./Sidebar.scss"
-import {AiFillHome,AiFillContacts,AiFillProject,AiFillBook,AiFillApi} from "react-icons/ai"
 import { Link } from 'react-router-dom'
 
 const Sidebar = (props:any) => {
@@ -26,7 +25,7 @@ const Sidebar = (props:any) => {
           <div className='eachListContainer'>
               <div className='eachListItem'>
                   <Link to={"/1/projects"} className='itemName'>
-                    My Projects
+                    Projects
                   </Link>
               </div>
           </div>

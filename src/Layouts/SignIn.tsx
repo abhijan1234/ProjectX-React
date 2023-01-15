@@ -1,5 +1,5 @@
 import { useState } from 'react'
-import LabelInput from '../Components/LabelInput'
+import LabelInput from '../Components/LabelInput/LabelInput'
 
 const SignIn = (props:any) => {
   const[email,setEmail]=useState("")

@@ -1,6 +1,6 @@
 import React from 'react'
-import Navbar from '../../Components/Navbar'
-import Sidebar from '../../Components/Sidebar'
+import Navbar from '../../Components/Navbar/Navbar'
+import Sidebar from '../../Components/Sidebar/Sidebar'
 
 const Reports = () => {
   return (

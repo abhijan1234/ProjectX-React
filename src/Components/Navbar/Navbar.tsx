@@ -1,7 +1,7 @@
 import React, { useEffect } from 'react'
 import {AiFillBell,AiFillSetting} from "react-icons/ai"
 import "./Navbar.scss"
-import me from "../Static/me.jpeg"
+import me from "../../Static/me.jpeg"
 
 const Navbar = (props:any) => {
   return (
