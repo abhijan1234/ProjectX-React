@@ -15,7 +15,7 @@
     color: rgb(3, 0, 0);
     text-transform: uppercase;
     letter-spacing: 7px;
-    font-size: 1.3em;
+    font-size: 1.5em;
     display: block;
 }
 
@@ -24,9 +24,9 @@
     list-style: none;
 }
 .home-navbar_item{
-    padding-top: 5px;
+    padding-top: 12px;
     white-space: nowrap;
-
+    font-size: 3vh
 }
 
 .home-navbar_link{
@@ -38,8 +38,8 @@
 }
 
 .home-profileImage{
-    width: 28px;
-    height: 28px;
+    width: 6.5vh;
+    height: 6.5vh;
     border-radius: 50%;
     cursor: pointer;
 }

@@ -21,7 +21,7 @@ const Popup = (props: any) => {
             disabled={!props.primaryButtomDisabled}
             style={{
               backgroundColor: "rgb(250, 202, 69)",
-              fontSize: "8px",
+              fontSize: "1.6vh",
             }} variant='contained'
             size="small"
             onClick={handleClick}
@@ -32,7 +32,7 @@ const Popup = (props: any) => {
             style={{
               marginLeft: "5%",
               // paddingRight:"6%",
-              fontSize: "8px"
+              fontSize: "1.6vh"
             }}
             variant='outlined' size="small"
             onClick={props.secondaryButtonHandle}
