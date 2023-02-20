@@ -1,0 +1,30 @@
+[
+    {
+      "ProjectName": "ML",
+      "Status": "Started",
+      "StartTime":"2022-09-20",
+      "EndTime":"",
+      "Mentor":"ABC"
+    },
+    {
+        "ProjectName": "AI",
+        "Status": "Stalled",
+        "StartTime":"2022-09-20",
+        "EndTime":"",
+        "Mentor":"XYZ"
+    },
+    {
+        "ProjectName": "Web",
+        "Status": "Finished",
+        "StartTime":"2022-09-20",
+        "EndTime":"2022-09-20",
+        "Mentor":"TRY"
+    },
+    {
+        "ProjectName": "MPMC",
+        "Status": "Started",
+        "StartTime":"2022-09-20",
+        "EndTime":"",
+        "Mentor":"LET"
+    }
+  ]
