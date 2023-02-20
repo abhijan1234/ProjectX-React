@@ -1,6 +1,7 @@
+// 1e2731
 .mainContainer{
     position: fixed;
-    background:rgb(157, 158, 160);
+    background: linear-gradient(145deg,#1e2731,#446c9a);
     margin-top: 4%;
     width: 12%;
     height: 100%;
@@ -9,9 +10,8 @@
 .mainListItems{
     display: flex;
     padding: 3vh 3vh 3vh 3vh;
-    text-decoration: none;
     transition: 550ms;
-    color: black;
+    color: white;
 }
 
 .mainSideList
@@ -26,6 +26,7 @@
     background-color: rgb(214, 218, 221);
     border-radius: 4px;
     transition: 500ms;
+    color: black;
 }
 
 .eachListItem{
@@ -38,11 +39,12 @@
 .eachListItem :hover{
     transition: 450ms;
     transform: scale(1.1);
+    color: black;
 }
 
 .itemName{
     text-decoration: none;
     justify-content: center;
     display: block;
-    color: black;
+    color: rgb(255, 255, 255);
 }
