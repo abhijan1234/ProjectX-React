@@ -45,25 +45,6 @@ const Projects = (props: any) => {
                     )
                   }
                 </tbody>
-                {/* <tr>
-                  <th style={{"paddingRight":"30px"}}>Project Name</th>
-                  <th style={{"paddingRight":"70px"}}>Status</th>
-                  <th style={{"paddingRight":"60px"}}>Start Time</th>
-                  <th style={{"paddingRight":"32px"}}>End Time</th>
-                  <th style={{"paddingRight":"10px"}}>Mentor</th>
-                </tr>
-                <tbody>{
-                  projectList.map(item=>
-                    <tr>
-                      <td style={{"paddingLeft":"35px"}}>{item.ProjectName}</td>
-                      <td style={{"paddingRight":"35px"}}>{item.Status}</td>
-                      <td style={{"paddingRight":"35px"}}>{item.StartTime}</td>
-                      <td style={{"textAlign": "center"}}>{item.EndTime.length>0?item.EndTime:"-"}</td>
-                      <td style={{"paddingLeft":"15px"}}>{item.Mentor}</td>
-                    </tr>
-                    )
-                  }
-                </tbody> */}
               </table>
             </Card>
           </div>
