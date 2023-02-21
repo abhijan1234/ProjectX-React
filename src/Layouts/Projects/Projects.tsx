@@ -22,31 +22,37 @@ const Projects = (props: any) => {
       <div className='project-main-tile'>
         <div className='project-row-tile'>
           <div className='projectPageContainer'>
-            <Card headerName = "My Projects">
-              <table className='content-table'>
-                <thead>
-                  <tr>
-                    <th>Project Name</th>
-                    <th>Status</th>
-                    <th>Start Time</th>
-                    <th>End Time</th>
-                    <th>Mentor</th>
-                  </tr>
-                </thead>
-                <tbody>{
-                  projectList.map(item=>
+            <div className='projectListCard'>
+              <Card headerName = "My Projects">
+                <table className='content-table'>
+                  <thead>
                     <tr>
-                      <td>{item.ProjectName}</td>
-                      <td>{item.Status}</td>
-                      <td>{item.StartTime}</td>
-                      <td>{item.EndTime.length>0?item.EndTime:"-"}</td>
-                      <td>{item.Mentor}</td>
+                      <th>Project Name</th>
+                      <th>Status</th>
+                      <th>Start Time</th>
+                      <th>End Time</th>
+                      <th>Mentor</th>
                     </tr>
-                    )
-                  }
-                </tbody>
-              </table>
-            </Card>
+                  </thead>
+                  <tbody>{
+                    projectList.map(item=>
+                      <tr>
+                        <td>{item.ProjectName}</td>
+                        <td>{item.Status}</td>
+                        <td>{item.StartTime}</td>
+                        <td>{item.EndTime.length>0?item.EndTime:"-"}</td>
+                        <td>{item.Mentor}</td>
+                      </tr>
+                      )
+                    }
+                  </tbody>
+                </table>
+              </Card>
+            </div>
+            <div className='projectReportCard'>
+              <Card></Card>
+            </div>
+            
           </div>
         </div>
       </div>

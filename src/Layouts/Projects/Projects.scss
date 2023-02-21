@@ -10,7 +10,18 @@
     align-items: center;
     justify-content: space-between;
 }
-
+.projectPageContainer{
+    display: flex;
+    justify-content: center;
+}
+.projectListCard{
+    margin-left: 15rem;
+    margin-top: 7rem;
+}
+.projectReportCard{
+    margin-left: 40em;
+    margin-top: 7rem;
+}
 .content-table{
     border-collapse: collapse;
     margin: 20px 0;
